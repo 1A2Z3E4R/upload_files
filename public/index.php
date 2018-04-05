@@ -19,7 +19,7 @@ if (!empty($_FILES['files']['name'][0])) {
         $file_size = $files['size'][$position];
         $file_error = $files['error'][$position];
         $file_ext = $files['type'][$position];
-        var_dump($file_ext);
+
 
         if (in_array($file_ext, $allowed)) {
             if ($file_error === 0) {
